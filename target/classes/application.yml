@@ -1,6 +1,16 @@
 server:
   port: 8081
 spring:
+#  redis配置
+  redis:
+    #地址
+    host: 127.0.0.1
+#    端口
+    port: 6379
+#    操作第几个库
+    database: 0
+  #    password:
+  #  redis配置
   application:
     name: reggie_take_out
   datasource:
@@ -19,3 +29,4 @@ mybatis-plus:
       id-type: ASSIGN_ID
 reggie:
   path: D:\xiangMuImg\
+
